@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Simulation</title>
+    <script>
+        // Function to create an NFT and store it in localStorage
+        function createNFT(tokenId, metadata, owner) {
+            const nft = {
+                tokenId: tokenId,
+                metadata: metadata,
+                owner: owner
+            };
+            localStorage.setItem(`nft_${tokenId}`, JSON.stringify(nft));
+            console.log(`NFT created with ID: ${tokenId}`);
+        }
+
+        // Function to retrieve an NFT by tokenId
+        function getNFT(tokenId) {
+            const nft = localStorage.getItem(`nft_${tokenId}`);
+            return nft ? JSON.parse(nft) : null;
+        }
+
+        // Function to transfer NFT ownership
+        function transferNFT(tokenId, newOwner) {
+            const nft = getNFT(tokenId);
+            if (nft) {
+                nft.owner = newOwner;
+                localStorage.setItem(`nft_${tokenId}`, JSON.stringify(nft));
+                console.log(`NFT ${tokenId} transferred to ${newOwner}`);
+            } else {
+                console.log(`NFT ${tokenId} not found`);
+            }
+        }
+
+        // Example usage
+        createNFT(1, { name: "CryptoPunk #1", rarity: "Legendary" }, "Player1");
+        console.log(getNFT(1));
+        transferNFT(1, "Player2");
+        console.log(getNFT(1));
+    </script>
+</head>
+<body>
+    <h1>NFT Simulation using localStorage</h1>
+    <p>Open the browser console to see NFT operations.</p>
+</body>
+</html>

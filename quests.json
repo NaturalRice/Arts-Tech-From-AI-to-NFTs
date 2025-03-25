@@ -1,0 +1,27 @@
+{
+  "quests": [
+    {
+      "id": 1,
+      "title": "The Lost Artifact",
+      "dialogs": [
+        "Welcome, adventurer! The artifact is hidden in the caves.",
+        "Beware of the guardian!"
+      ],
+      "reward": {
+        "nftId": 101,
+        "xp": 50
+      }
+    },
+    {
+      "id": 2,
+      "title": "The Merchant's Request",
+      "dialogs": [
+        "Can you deliver this package?",
+        "The recipient is in the next town."
+      ],
+      "reward": {
+        "gold": 100
+      }
+    }
+  ]
+}
