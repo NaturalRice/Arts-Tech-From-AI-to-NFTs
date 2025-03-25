@@ -5,7 +5,7 @@
 ### **一、运行方法**
 #### **1. 在线游玩（推荐）**
 - **步骤**：  
-  1. 访问GitHub Pages生成的URL（格式：`https://[你的GitHub用户名].github.io/[仓库名]/`）。  
+  1. 访问GitHub Pages生成的URL（格式：`https://NaturalRice.github.io/Arts-Tech-From-AI-to-NFTs/`）。  
   2. 首次加载需等待资源初始化（约5-10秒）。  
   3. 点击**「开始游戏」**按钮进入主界面。  
 
