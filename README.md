@@ -5,14 +5,14 @@
 ### **一、如何运行游戏**
 #### **1. 在线游玩（推荐）**
 - **步骤**：  
-  1. 访问GitHub Pages部署的链接（格式：`https://[用户名].github.io/[仓库名]/`）。  
+  1. 访问GitHub Pages部署的链接（格式：`https://NaturalRice.github.io/Arts-Tech-From-AI-to-NFTs/`）。  
   2. **首次加载**：等待资源初始化（约5-10秒，进度条显示在屏幕底部）。  
   3. **开始游戏**：点击“灵元界入口”按钮进入主场景。
 
 #### **2. 本地运行（开发测试）**
 ```bash
 # 克隆代码库
-git clone https://github.com/[用户名]/[仓库名].git
+git clone https://NaturalRice.github.io/Arts-Tech-From-AI-to-NFTs.git
 cd [仓库名]
 
 # 安装依赖（如需）
