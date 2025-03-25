@@ -12,7 +12,7 @@
 #### **2. 本地运行（开发测试）**
 ```bash
 # 克隆仓库
-git clone https://github.com/[用户名]/[仓库名].git
+git clone https://github.com/NaturalRice/Arts-Tech-From-AI-to-NFTs.git
 cd [仓库名]
 
 # 启动本地服务器（任选其一）
