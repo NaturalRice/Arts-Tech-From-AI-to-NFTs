@@ -47,5 +47,5 @@ loadQuests();
 
 // Export for use in game
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { loadQuests, startQuest, nextDialog };
+    export { loadQuests, startQuest, nextDialog }; // 删除最后的module.exports判断
 }

@@ -28,16 +28,16 @@
     </div>
 
     <script type="module">
-        // 动态加载核心模块
-        import { GameEngine } from './scripts/game-engine.js';
-        import { UserManager } from './scripts/user-manager.js';
-        
-        // 初始化游戏
-        GameEngine.init('game-container');
-        UserManager.init();
-        
-        // 隐藏加载提示
+  import { GameEngine } from './scripts/game-engine.js';
+  import { UserManager } from './scripts/user-manager.js';
+  import { loadQuests } from './scripts/ai-module.js';
+
+    // 初始化系统
+    GameEngine.init('game-container');
+    UserManager.init();
+    loadQuests().then(() => {
         document.getElementById('loading').textContent = '按空格键开始';
-    </script>
+    });
+	</script>
 </body>
 </html>
